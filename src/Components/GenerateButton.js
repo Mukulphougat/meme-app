@@ -36,7 +36,7 @@ function GenerateButton() {
         axios.request(options).then(function (response) {
             setImage(response.data.url)
         }).catch(function (error) {
-            setImage(memeImage);
+            console.log(null);
         });
     }
     function onErrorImage(erroredImage) {
